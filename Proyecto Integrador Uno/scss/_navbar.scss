@@ -1,0 +1,89 @@
+@mixin row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+@mixin col {
+    display:flex;
+    flex-direction: column;
+}
+
+.navbar {
+    @include row;
+    justify-content: space-around;
+    height: 56px;
+    background-color: white;
+}
+
+.navbar * {
+    background-color:white;
+}
+    
+.navbar {
+    .left {
+        @include row;
+
+        .burger {
+            @include col;
+            padding-left: 12px;
+        }
+        .home {
+            @include row;
+            .logo {
+                @include col;
+                height: 40px;
+                padding-left: 11px;
+            }
+        }
+        
+        .searchbox {
+            @include col;
+            height: 32px;
+        }
+
+        .lensLeft{
+            @include col;
+            height: 32px;
+            margin-right: 400px;
+        }
+    }
+}
+
+.navbar {
+    .right{
+        @include row;
+        text-align: center;
+        align-items: center;
+
+        .lensRight {
+            @include col;
+        }
+        .login {
+            @include col;
+            color: rgb(165, 165, 165);
+            text-decoration: none;
+            margin-right: 20px;
+        }
+        .login:hover {
+            color: rgb(57, 57, 185);
+        }
+        
+        .createAccount{
+            @include col;
+            justify-content: center;
+            color: #3B49DF;
+            text-decoration: none;
+            border: 10px blue;
+            margin-right: 12px;
+            border: solid 1.2px blue;
+            border-radius: 8px;
+            height: 38px;
+            width: 140px;
+        }
+        .createAccount:hover {
+            color: white;
+            background-color: #3B49DF;
+            text-decoration: underline;
+        }
+    }
+}

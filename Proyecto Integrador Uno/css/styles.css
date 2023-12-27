@@ -1,0 +1,157 @@
+@charset "UTF-8";
+/* margen y padding 0 al igual que "box-sizing: content-box;" para que los tamaños sean reales
+   "background-color" acorde a la página oficial y "Google Font: Roboto" acorde a las instrucciones del profesor*/
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: content-box;
+  background-color: rgba(245, 245, 245, 0.7803921569);
+  font-family: "Roboto", sans-serif;
+}
+
+.mainFrame {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0px;
+}
+.mainFrame .sidebar1 {
+  width: 200px;
+  margin: 15px;
+}
+.mainFrame .sidebar1 .createAccount {
+  border: 1px black;
+}
+.mainFrame .sidebar1 button {
+  text-align: center;
+}
+.mainFrame .sidebar1 button:hover {
+  cursor: pointer;
+}
+.mainFrame .sidebar1 .noBorderB {
+  border: none;
+  background: none;
+}
+.mainFrame .sidebar1 ul {
+  list-style: none;
+}
+.mainFrame .tags {
+  overflow-y: scroll;
+  scroll-behavior: auto;
+  scroll-margin: 0 10px 30px 0;
+  width: 100%;
+  height: 200px;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  height: 56px;
+  background-color: white;
+}
+
+.navbar * {
+  background-color: white;
+}
+
+.navbar .left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.navbar .left .burger {
+  display: flex;
+  flex-direction: column;
+  padding-left: 12px;
+}
+.navbar .left .home {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.navbar .left .home .logo {
+  display: flex;
+  flex-direction: column;
+  height: 40px;
+  padding-left: 11px;
+}
+.navbar .left .searchbox {
+  display: flex;
+  flex-direction: column;
+  height: 32px;
+}
+.navbar .left .lensLeft {
+  display: flex;
+  flex-direction: column;
+  height: 32px;
+  margin-right: 400px;
+}
+
+.navbar .right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  align-items: center;
+}
+.navbar .right .lensRight {
+  display: flex;
+  flex-direction: column;
+}
+.navbar .right .login {
+  display: flex;
+  flex-direction: column;
+  color: rgb(165, 165, 165);
+  text-decoration: none;
+  margin-right: 20px;
+}
+.navbar .right .login:hover {
+  color: rgb(57, 57, 185);
+}
+.navbar .right .createAccount {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #3B49DF;
+  text-decoration: none;
+  border: 10px blue;
+  margin-right: 12px;
+  border: solid 1.2px blue;
+  border-radius: 8px;
+  height: 38px;
+  width: 140px;
+}
+.navbar .right .createAccount:hover {
+  color: white;
+  background-color: #3B49DF;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 7680px) {
+  .navbar .right .lensRight {
+    display: none;
+  }
+  .navbar .left .burger {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .navbar .left .searchbox {
+    display: none;
+  }
+  .navbar .right .login {
+    display: none;
+  }
+  .navbar .left .lensLeft {
+    display: none;
+  }
+  .navbar .right .lensRight {
+    display: flex;
+  }
+  .navbar .left .burger {
+    display: flex;
+  }
+}/*# sourceMappingURL=styles.css.map */
