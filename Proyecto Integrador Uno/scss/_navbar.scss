@@ -32,25 +32,30 @@
             .logo {
                 @include col;
                 height: 40px;
-                padding-left: 11px;
+                margin-left: 11px;
+                margin-right: 11px;
             }
         }
         
         .searchbox {
-            @include col;
+            @include row;
             height: 32px;
-        }
-
-        .lensLeft{
-            @include col;
-            height: 32px;
-            padding-right: 400px;
+            border: solid 1px gray;
+            .search {
+                @include col;
+                outline: none;
+                border: none;
+            }
+            .lensLeft {
+                @include col;
+                height: 32px;
+            }
         }
     }
 }
 
 .navbar {
-    .right{
+    .right {
         @include row;
         text-align: center;
         align-items: center;
@@ -85,5 +90,32 @@
             background-color: #3B49DF;
             text-decoration: underline;
         }
+    }
+}
+
+/* Responsiveness of the navbar */
+@media screen and (max-width: 7680px) {
+    .navbar .right .lensRight {
+        display: none;
+    }
+    .navbar .left .burger {
+        display: none;
+    }
+}
+@media screen and (max-width: 768px) {
+    .navbar .left .searchbox {
+        display: none;
+    }
+    .navbar .right .login {
+        display: none;
+    }
+    .navbar .left .lensLeft {
+        display: none;
+    }
+    .navbar .right .lensRight {
+        display: flex;
+    }
+    .navbar .left .burger {
+        display: flex;
     }
 }
