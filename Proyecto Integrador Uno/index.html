@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!--Language Settings-->
+    <!--Basic settings-->
     <meta charset="UTF-8">
-    <!--Rensposiveness Screen Width Settings-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Title and Favicon-->
     <title>DEV Community</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <!--Favicon-->
     <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
@@ -16,8 +16,6 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-config" content="favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
-    <!--Stylesheet-->
-    <link rel="stylesheet" href="css/styles.css">
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,8 +25,9 @@
 </head>
 
 <body>
-    <!--navbar-->
+    <!--Navbar-->
     <nav class="navbar">
+        <!--Left Half Of The Navbar-->
         <div class="left">
             <img class="burger" src="./img/burger.png" alt="≡">
             <a class="home" href="./index.html">
@@ -37,6 +36,7 @@
             <input class="searchbox" placeholder="Search...">
             <img class="lensLeft" src="./img/lens.png" alt="🔎">
         </div>
+        <!--Right Half Of The Navbar-->
         <div class="right">
             <img class="lensRight" src="./img/lens.png" alt="🔎">
             <a class="login" href="#">Log In</a>
@@ -44,129 +44,51 @@
         </div>
     </nav>
 
-
+    <!--MainFrame Of The Website-->
     <div class="mainFrame">
-        <aside class="sidebar1">
-            <div class="createAccount">
-                <h4>DEV Community is a community of 1,214,432 amazing developers</h4>
-                <p>We're a place where coders share, stay up-to-date and grow their careers.</p>
-                <button>Create Account</button><br>
-                <button class="noBorderB">Login</button>
-            </div>
-            <nav class="navigationList">
-                <ul>
-                    <li>
-                        <a href="#">Home</a></li>
-                    <li>
-                        <a href="#">Reading List</a></li>
-                    <li>
-                        <a href="#">Podcasts</a></li>
-                    <li>
-                        <a href="#">Videos</a></li>
-                    <li>
-                        <a href="#">Tags</a></li>
-                    <li>
-                        <a href="#">FAQ</a></li>
-                    <li>
-                        <a href="#">Forem shop</a></li>
-                    <li>
-                        <a href="#">Advertise on DEV</a></li>
-                    <li>
-                        <a href="#">About</a></li>
-                    <li>
-                        <a href="#">Contact</a></li>
-                    <li>
-                        <a href="#">Guides</a></li>
-                    <li>
-                        <a href="#">Software Comparisons</a></li>
-            </ul>
-            <h3>Other</h3>
-            <ul>
-                <li>
-                    <a href="#">Code of Conduct</a></li>
-                <li>
-                    <a href="#">Privacy Policy</a></li>
-                <li>
-                    <a href="#">Terms of use</a></li>
-            </ul>
-            </nav>
-        <div class="socialMedia">
-            <div>
-                <a href="https://twitter.com/thepracticaldev">
-                    <title>Twitter</title>
-                </a>
-                <a href="https://www.facebook.com/thepracticaldev">
-                    <title>Facebook</title>
-                </a>
-                <a href="https://github.com/forem">
-                    <title>Github</title>
-                </a>
-                <a href="https://www.instagram.com/thepracticaldev/">
-                    <title>Instagram</title>
-                </a>
-                <a href="https://www.twitch.tv/thepracticaldev">
-                    <title>Twitch</title>
-                </a>
-                <a href="https://fosstodon.org/@thepracticaldev">
-                    <title>Mastodon</title>
-                </a>
-            </div>
-        </div>
-        <nav class="tags">
-            <h3>Popular Tags</h3>
-            <ul>
-                <li>#web</li>
-                <li>#javascript</li>
-                <li>#programming</li>
-                <li>#beginners</li>
-                <li>#webdev</li>
-                <li>#tutorial</li>
-                <li>#react</li>
-                <li>#python</li>
-                <li>#devops</li>
-                <li>#opensource</li>
-                <li>#productivity</li>
-                <li>#aws</li>
-                <li>#ai</li>
-                <li>#discuss</li>
-                <li>#node</li>
-                <li>#typescript</li>
-                <li>#codenewbie</li>
-                <li>#css</li>
-                <li>#news</li>
-                <li>#career</li>
-                <li>#html</li>
-                <li>#cloud</li>
-                <li>#github</li>
-                <li>#learning</li>
-                <li>#api</li>
-                <li>#database</li>
-                <li>#testing</li>
-                <li>#blockchain</li>
-                <li>#security</li>
-                <li>#java</li>
-                <li>#go</li>
-            </ul>
-        </nav>
-        <div class="community">
-            <h3>DEV Community</h3>
-        </div>
-        <footer>
-            <p>DEV Community A constructive and inclusive social network for software developers. 
-                With you every step of your journey.</p>
-            <p>Built on Forem — the open source software that powers DEV and other inclusive communities.</p>
-            <p>Made with love and Ruby on Rails. DEV Community © 2016 - 2023.</p>
-        </footer>
-        </aside>
-        <div class="content">
-            <p>Main content</p>
-        </div>
+        <!--Left Sidebar-->
+        <section class="sidebar1">
+                <article class="intro">
+                    <h3>DEV Community is a community of 1,228,689 amazing developers</h3>
+                    <span>We're a place where coders share, stay up-to-date and grow their careers</span>
+                </article>
+                <article class="hyperlinks">
+                    <!--Main Hyperlinks-->
+                    <span><img src="./img/1.png"> Home</span>
+                    <span><img src="./img/2.png"> Podcats</span>
+                    <span><img src="./img/3.png"> Videos</span>
+                    <span><img src="./img/4.png"> Tags</span>
+                    <span><img src="./img/5.png"> FAQ</span>
+                    <span><img src="./img/6.png"> Forem Shop</span>
+                    <span><img src="./img/7.png"> Advertise on DEV</span>
+                    <span><img src="./img/8.png"> About</span>
+                    <span><img src="./img/9.png"> Contact</span>
+                    <span><img src="./img/10.png"> Guides</span>
+                    <span><img src="./img/11.png"> Software comparisons</span>
+                    <!--Other Hyperlinks-->
+                    <h4>Other</h4>
+                    <span><img src="./img/12.png">Code of Conduct</span>
+                    <span><img src="./img/13.png">Privacy Policy</span>
+                    <span><img src="./img/14.png">Terms of use</span>
+                    <!--Social Media Links-->
+                    <img src="./img/15.png">
+                    <img src="./img/16.png">
+                    <img src="./img/17.png">
+                    <img src="./img/18.png">
+                    <img src="./img/19.png">
+                    <img src="./img/20.png">
+                </article>
+        </section>
+        <!--Feed-->
+        <section class="Feed">
 
+        </section>
+        <!--Right Sidebar-->
+        <section class="sidebar2">
 
-        <div class="sidebar2">
-            <p>Second sidebar</p>
-        </div>
+        </section>
     </div>
+
 </body>
 
 </html>
