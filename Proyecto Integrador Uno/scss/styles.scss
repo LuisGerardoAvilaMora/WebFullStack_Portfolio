@@ -1,8 +1,28 @@
 * {
     margin: 0%;
     padding: 0%;
+    width: 100%;
     box-sizing: content-box;
     background-color: #f5f5f5c7;
     font-family: 'Roboto', sans-serif;
 }
-@import "_navbar.scss";
+@mixin row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+@mixin col {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.mainFrame {
+    @include row;
+    align-items: flex-start;
+}
+@import "_0navbar.scss";
+@import "_feed.scss";
+@import "_sidebar1.scss";
+@import "_sidebar2.scss";

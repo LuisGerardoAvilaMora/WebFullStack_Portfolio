@@ -1,0 +1,25 @@
+.feed {
+    @include col;
+    width: 25%;
+}
+
+
+
+.feed > .feedSelections {
+    @include row;
+    justify-content: flex-start;
+}
+
+.feed > .feedSelections >  span {
+    margin-right: 24px;
+}
+
+
+
+.feed > .topPost {
+    @include col;
+}
+
+.feed > .topPost:first-child {
+    width: 100%;
+}

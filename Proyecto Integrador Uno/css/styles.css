@@ -1,14 +1,24 @@
 * {
   margin: 0%;
   padding: 0%;
+  width: 100%;
   box-sizing: content-box;
   background-color: rgba(245, 245, 245, 0.7803921569);
   font-family: "Roboto", sans-serif;
 }
 
+.mainFrame {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start;
+}
+
 .navbar {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   align-items: center;
   justify-content: space-around;
   height: 56px;
@@ -22,21 +32,27 @@
 .navbar .left {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   align-items: center;
 }
 .navbar .left .burger {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   padding-left: 12px;
 }
 .navbar .left .home {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   align-items: center;
 }
 .navbar .left .home .logo {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   height: 40px;
   margin-left: 11px;
   margin-right: 11px;
@@ -44,6 +60,7 @@
 .navbar .left .searchbox {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   align-items: center;
   height: 32px;
   border: solid 1px gray;
@@ -51,18 +68,23 @@
 .navbar .left .searchbox .search {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   outline: none;
   border: none;
 }
 .navbar .left .searchbox .lensLeft {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   height: 32px;
 }
 
 .navbar .right {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   align-items: center;
   text-align: center;
   align-items: center;
@@ -70,10 +92,14 @@
 .navbar .right .lensRight {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .navbar .right .login {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   color: rgb(165, 165, 165);
   text-decoration: none;
   margin-right: 20px;
@@ -84,6 +110,8 @@
 .navbar .right .createAccount {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   justify-content: center;
   color: #3B49DF;
   text-decoration: none;
@@ -125,4 +153,57 @@
   .navbar .left .burger {
     display: flex;
   }
+}
+.feed {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+}
+
+.feed > .feedSelections {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.feed > .feedSelections > span {
+  margin-right: 24px;
+}
+
+.feed > .topPost {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.feed > .topPost:first-child {
+  width: 100%;
+}
+
+.sidebar1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 8%;
+}
+
+.sidebar1 > span {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 11.5%;
 }/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,9 @@
+.sidebar1 {
+    @include col;
+    width: 8%;
+}
+
+.sidebar1 > span {
+    @include row;
+
+}
