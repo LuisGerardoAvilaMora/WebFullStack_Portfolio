@@ -1,9 +1,21 @@
 .sidebar1 {
     @include col;
-    width: 8%;
+    margin-left:10px;
+    width: 15em;
 }
 
-.sidebar1 > span {
-    @include row;
 
+.sidebar1 > .intro {
+    height: 20em;
+    width: auto;
+    border: solid 1px rgb(255, 4, 4);
+    border-radius: 5px;
+    background-color: white;
+}
+.sidebar1 > .intro > * {
+    font-size: 130%;
+    width: auto;
+    height: auto;
+    margin: 8%;
+    background-color: white;
 }

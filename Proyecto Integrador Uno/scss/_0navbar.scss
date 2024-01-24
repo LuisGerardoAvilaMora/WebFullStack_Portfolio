@@ -1,7 +1,8 @@
 .navbar {
     @include row;
-    justify-content: space-around;
     height: 56px;
+    margin-bottom: 10px;
+    justify-content: center;
     background-color: white;
 }
 
@@ -12,25 +13,23 @@
 .navbar {
     .left {
         @include row;
-
-        .burger {
-            @include col;
-            padding-left: 12px;
-        }
         .home {
+            width: 72px;
             @include row;
             .logo {
                 @include col;
+                width: 50px;
                 height: 40px;
                 margin-left: 11px;
                 margin-right: 11px;
             }
         }
-        
         .searchbox {
             @include row;
+            width: 26em;
             height: 32px;
             border: solid 1px gray;
+            border-radius: 5px;
             .search {
                 @include col;
                 outline: none;
@@ -38,7 +37,9 @@
             }
             .lensLeft {
                 @include col;
-                height: 32px;
+                width: 38px;
+                height: 30px;
+                margin-right: 4px;
             }
         }
     }
@@ -48,8 +49,6 @@
     .right {
         @include row;
         text-align: center;
-        align-items: center;
-
         .lensRight {
             @include col;
         }
@@ -65,10 +64,8 @@
         
         .createAccount{
             @include col;
-            justify-content: center;
             color: #3B49DF;
             text-decoration: none;
-            border: 10px blue;
             margin-right: 12px;
             border: solid 1.2px blue;
             border-radius: 8px;

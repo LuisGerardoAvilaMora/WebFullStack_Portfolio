@@ -20,8 +20,9 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  justify-content: space-around;
   height: 56px;
+  margin-bottom: 10px;
+  justify-content: center;
   background-color: white;
 }
 
@@ -35,14 +36,8 @@
   justify-content: center;
   align-items: center;
 }
-.navbar .left .burger {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding-left: 12px;
-}
 .navbar .left .home {
+  width: 72px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -53,6 +48,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 50px;
   height: 40px;
   margin-left: 11px;
   margin-right: 11px;
@@ -62,8 +58,10 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  width: 26em;
   height: 32px;
   border: solid 1px gray;
+  border-radius: 5px;
 }
 .navbar .left .searchbox .search {
   display: flex;
@@ -78,7 +76,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 32px;
+  width: 38px;
+  height: 30px;
+  margin-right: 4px;
 }
 
 .navbar .right {
@@ -87,7 +87,6 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  align-items: center;
 }
 .navbar .right .lensRight {
   display: flex;
@@ -112,10 +111,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  justify-content: center;
   color: #3B49DF;
   text-decoration: none;
-  border: 10px blue;
   margin-right: 12px;
   border: solid 1.2px blue;
   border-radius: 8px;
@@ -159,7 +156,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 25%;
+  width: 40rem;
+  margin-left: 10px;
+  margin-right: 10px;
+  align-items: flex-start;
 }
 
 .feed > .feedSelections {
@@ -167,11 +167,34 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  justify-content: flex-start;
+  width: 180px;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .feed > .feedSelections > span {
-  margin-right: 24px;
+  font-size: 700;
+}
+
+.feed > .feedSelections > span:nth-child(1) {
+  width: 61px;
+  font-size: 112%;
+  font-weight: 700;
+  margin-left: 24px;
+  margin-right: 30px;
+}
+
+.feed > .feedSelections > span:nth-child(2) {
+  width: 61px;
+  font-size: 112%;
+  font-weight: 300;
+  margin-right: 28px;
+}
+
+.feed > .feedSelections > span:nth-child(3) {
+  width: 61px;
+  font-size: 112%;
+  font-weight: 300;
 }
 
 .feed > .topPost {
@@ -190,14 +213,24 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 8%;
+  margin-left: 10px;
+  width: 15em;
 }
 
-.sidebar1 > span {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+.sidebar1 > .intro {
+  height: 20em;
+  width: auto;
+  border: solid 1px rgb(255, 4, 4);
+  border-radius: 5px;
+  background-color: white;
+}
+
+.sidebar1 > .intro > * {
+  font-size: 130%;
+  width: auto;
+  height: auto;
+  margin: 8%;
+  background-color: white;
 }
 
 .sidebar2 {
@@ -205,5 +238,11 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 11.5%;
+  width: 15em;
+}
+
+@media screen and (max-width: 768px) {
+  .mainFrame > .sidebar2 {
+    display: none;
+  }
 }/*# sourceMappingURL=styles.css.map */
